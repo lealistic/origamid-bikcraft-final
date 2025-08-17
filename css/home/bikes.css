@@ -1,0 +1,96 @@
+.bikes h2 {
+  margin-bottom: 40px;
+}
+.bike-box {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.scroll-x {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  overflow-x: auto;
+}
+.bike-item img {
+  max-width: 440px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.bike-item h3 {
+  margin-bottom: 8px;
+  position: relative;
+}
+.bike-item h3::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--p1);
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 8px;
+  transition: 0.2s;
+}
+.bike-item:hover h3::before {
+  width: 0.975em;
+  transition: 0.2s;
+}
+.bike-item p {
+  margin-left: 22px;
+  margin-bottom: 32px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .bikes h2 {
+    font-size: 3rem;
+  }
+  .bike-item img {
+    max-width: 380px;
+  }
+  .bike-item h3 {
+    font-size: 1.75rem;
+  }
+  .bike-item h3::before {
+    height: 6px;
+  }
+  .bike-item p {
+    font-size: 1.25rem;
+    margin-bottom: 28px;
+  }
+}
+@media (max-width: 800px) {
+  .bikes h2 {
+    font-size: 2rem;
+    margin-bottom: 16px;
+  }
+  .scroll-x {
+    gap: 40px;
+  }
+  .bike-item img {
+    max-width: 320px;
+  }
+  .bike-item h3 {
+    font-size: 1.25rem;
+  }
+  .bike-item h3::before {
+    margin-bottom: 4px;
+  }
+  .bike-item p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .bike-item img {
+    max-width: 260px;
+  }
+  .bike-item h3 {
+    font-size: 1.125rem;
+  }
+  .bike-item p {
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+  }
+}
