@@ -42,14 +42,6 @@
     bottom: 150px;
   }
 }
-@media (max-width: 1200px) {
-  .intro-text h1 {
-    font-size: 3rem;
-  }
-  .intro-text p {
-    font-size: 1.25rem;
-  }
-}
 @media (max-width: 800px) {
   .intro-bg {
     background-color: var(--c11);
@@ -67,11 +59,7 @@
     padding-bottom: 0px;
   }
   .intro-text h1 {
-    font-size: 2rem;
     margin-bottom: 16px;
-  }
-  .intro-text p {
-    font-size: 1.25rem;
   }
   .intro img {
     height: 300px;

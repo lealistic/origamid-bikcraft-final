@@ -5,6 +5,7 @@
   max-width: 1500px;
   margin: 0 auto;
   padding: 20px;
+  margin-bottom: 120px;
 }
 .scroll-x {
   display: flex;
@@ -43,26 +44,21 @@
 
 /* Media Queries */
 @media (max-width: 1200px) {
-  .bikes h2 {
-    font-size: 3rem;
+  .bike-box {
+    margin-bottom: 60px;
   }
   .bike-item img {
     max-width: 380px;
-  }
-  .bike-item h3 {
-    font-size: 1.75rem;
   }
   .bike-item h3::before {
     height: 6px;
   }
   .bike-item p {
-    font-size: 1.25rem;
     margin-bottom: 28px;
   }
 }
 @media (max-width: 800px) {
   .bikes h2 {
-    font-size: 2rem;
     margin-bottom: 16px;
   }
   .scroll-x {
@@ -71,14 +67,10 @@
   .bike-item img {
     max-width: 320px;
   }
-  .bike-item h3 {
-    font-size: 1.25rem;
-  }
   .bike-item h3::before {
     margin-bottom: 4px;
   }
   .bike-item p {
-    font-size: 1rem;
     margin-bottom: 20px;
   }
 }
@@ -86,11 +78,7 @@
   .bike-item img {
     max-width: 260px;
   }
-  .bike-item h3 {
-    font-size: 1.125rem;
-  }
   .bike-item p {
-    font-size: 0.875rem;
     margin-bottom: 20px;
   }
 }
